@@ -1,0 +1,30 @@
+.check-in-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .slide-down-sheet {
+    background-color: black;
+    color: white;
+    width: 100%;
+    max-width: 800px; /* Ajusta según tu diseño */
+    padding: 20px;
+    position: fixed; /* Fijar la posición para que quede sobre el carrusel */
+    top: 100%; /* Empieza justo debajo del viewport */
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 10; /* Asegúrate de que esté encima del carrusel */
+  }
+  
+  .slide-down-sheet.visible {
+    transform: translateY(0);
+  }
+  
