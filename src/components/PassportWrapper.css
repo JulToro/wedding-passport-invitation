@@ -1,0 +1,88 @@
+.passport {
+  position: relative;
+  width: 30vw;
+  height: 40vw;
+  z-index: 1;
+}
+
+.passport__cover {
+  position: absolute;
+  background: url("/public/images/DSC00015.JPG");
+  background-size: cover;
+  transform: perspective(1000px);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform-origin: left;
+}
+
+.passport__firstpage {
+  position: absolute;
+  background-color: wheat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform-origin: left;
+}
+
+.passport--priority {
+  z-index: 1;
+}
+
+.passport--open {
+  animation: open linear 2s;
+  animation-fill-mode: forwards;
+}
+
+.passport--open > * {
+  animation: invisible linear 2s;
+  animation-fill-mode: forwards;
+}
+
+.passport--close > * {
+  animation: visible linear 2s;
+  animation-fill-mode: forwards;
+}
+
+.passport--close {
+  animation: close linear 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes invisible {
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@keyframes open {
+  0% {
+    transform: perspective(1500px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1500px) rotateY(-100deg);
+  }
+}
+
+@keyframes close {
+  0% {
+    transform: perspective(1500px) rotateY(-100deg);
+  }
+  100% {
+    transform: perspective(1500px) rotateY(0deg);
+  }
+}
