@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <PassportWrapper>
-        <div style={{ backgroundColor: 'red', width: '100%', height: '100%' }}></div>
+        <div style={{ backgroundColor: 'beige', width: '100%', height: '100%' }}></div>
       </PassportWrapper>
     </div>
   );
