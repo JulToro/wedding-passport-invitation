@@ -9,6 +9,7 @@ const PassportWrapper = ({ children }) => {
   const [animating, setAnimating] = useState(false);
 
   const togglePage = (page) => {
+    if (open[page]) return;
     setOpen((prev) => ({ ...prev, [page]: !prev[page] }));
     setAnimating(true);
     setPriority(page);
@@ -16,13 +17,21 @@ const PassportWrapper = ({ children }) => {
 
   return <div className="passport">
     <div
+      className={`passport__secondpage 
+        ${open['second'] ? 'passport--open' : 'passport--close'} 
+        ${priority === 'second' ? 'passport--priority' : ''}`}
+      onClick={() => togglePage('second')}
+      style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+      onAnimationEnd={() => setAnimating(false)}>
+    </div>
+    <div
       className={`passport__firstpage 
         ${open['first'] ? 'passport--open' : 'passport--close'} 
         ${priority === 'first' ? 'passport--priority' : ''}`}
       onClick={() => togglePage('first')}
       style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
       onAnimationEnd={() => setAnimating(false)}>
-      <Collage ready={!animating && open['cover']} />
+      <Collage ready={open['cover']} />
     </div>
     <div
       className={`passport__cover 

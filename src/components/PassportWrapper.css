@@ -26,6 +26,16 @@
   transform-origin: left;
 }
 
+.passport__secondpage {
+  position: absolute;
+  background-color: wheat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform-origin: left;
+}
+
 .passport__face {
   width: 100%;
   height: 100%;
