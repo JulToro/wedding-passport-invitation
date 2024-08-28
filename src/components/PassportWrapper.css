@@ -5,35 +5,48 @@
   z-index: 1;
 }
 
-.passport__cover {
+.passport__page {
   position: absolute;
-  background-color: #fecead;
   transform: perspective(1000px);
   top: 0;
   left: 0;
   bottom: 0;
   width: 100%;
   transform-origin: left;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 
-.passport__firstpage {
-  position: absolute;
-  background-color: wheat;
+.passport__page::after {
+  content: "";
+  right: 0;
+  bottom: 0;
   top: 0;
   left: 0;
-  bottom: 0;
-  width: 100%;
-  transform-origin: left;
+  position: absolute;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 
-.passport__secondpage {
-  position: absolute;
+.passport__cover {
+  background-color: #fecead;
+}
+
+.passport__cover::after {
+  background-color: red;
+}
+
+.passport__first {
   background-color: wheat;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  transform-origin: left;
+}
+
+.passport__first::after {
+  background-color: yellow;
+}
+
+.passport__second {
+  background-color: wheat;
 }
 
 .passport__face {
@@ -42,46 +55,14 @@
   object-fit: contain;
 }
 
-.passport--priority {
-  z-index: 1;
-}
-
 .passport--open {
   animation: open linear 2s;
-  animation-fill-mode: forwards;
-}
-
-.passport--open > * {
-  animation: invisible 2s steps(2, jump-none);
-  animation-fill-mode: forwards;
-}
-
-.passport--close > * {
-  animation: visible 2s steps(2, jump-none);
   animation-fill-mode: forwards;
 }
 
 .passport--close {
   animation: close linear 2s;
   animation-fill-mode: forwards;
-}
-
-@keyframes invisible {
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes visible {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
 }
 
 @keyframes open {

@@ -2,50 +2,81 @@ import React, { useState } from 'react';
 import './PassportWrapper.css';
 import Collage from './Collage';
 
+const defaultPages = [
+  {
+    id: 'cover',
+    visible: false,
+    priority: 0,
+    open: false,
+    content: <img
+      className="passport__face"
+      src="/images/cover.png"
+      alt="Passport cover"
+    />
+  },
+  {
+    id: 'first',
+    visible: false,
+    priority: 0,
+    open: false,
+    animating: false,
+    content: <Collage />
+  }
+].reverse();
+
 const PassportWrapper = ({ children }) => {
 
-  const [open, setOpen] = useState({})
-  const [priority, setPriority] = useState('');
-  const [animating, setAnimating] = useState(false);
+  const [pagesData, setPagesData] = useState(defaultPages);
 
-  const togglePage = (page) => {
-    if (open[page]) return;
-    setOpen((prev) => ({ ...prev, [page]: !prev[page] }));
-    setAnimating(true);
-    setPriority(page);
+  const updatePage = (pageId, property, value) => {
+    setPagesData((prev) => {
+      return prev.map((page) => {
+        if (page.id !== pageId) return page;
+        return {
+          ...page,
+          [property]: value
+        }
+      })
+    })
+  }
+
+  const openPage = (pageId) => {
+    setPagesData((prev) => {
+      let index;
+      prev = prev.map((page, i) => {
+        if (page.id !== pageId) return page;
+        if (page.open) return page;
+        index = i;
+        const max = Math.max(...prev.map(o => o.priority));
+        return {
+          ...page,
+          open: true,
+          priority: max + 1,
+          visible: false,
+        }
+      })
+      prev[index - 1 < 0 ? 0 : index - 1].visible = true;
+      return prev;
+    })
+  }
+
+  const setAnimating = (pageId, value) => {
+    updatePage(pageId, 'animating', value)
   }
 
   return <div className="passport">
-    <div
-      className={`passport__secondpage 
-        ${open['second'] ? 'passport--open' : 'passport--close'} 
-        ${priority === 'second' ? 'passport--priority' : ''}`}
-      onClick={() => togglePage('second')}
-      style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-      onAnimationEnd={() => setAnimating(false)}>
-    </div>
-    <div
-      className={`passport__firstpage 
-        ${open['first'] ? 'passport--open' : 'passport--close'} 
-        ${priority === 'first' ? 'passport--priority' : ''}`}
-      onClick={() => togglePage('first')}
-      style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-      onAnimationEnd={() => setAnimating(false)}>
-      <Collage ready={open['cover']} />
-    </div>
-    <div
-      className={`passport__cover 
-        ${open['cover'] ? 'passport--open' : 'passport--close'} 
-        ${priority === 'cover' ? 'passport--priority' : ''}`}
-      onClick={() => togglePage('cover')}
-      onAnimationEnd={() => setAnimating(false)}>
-      <img
-        className="passport__face"
-        src="/images/cover.png"
-        alt="Passport cover"
-      />
-    </div>
-    {children}
+    {
+      pagesData.map(({ id, open, priority, content, visible }) =>
+        <div
+          key={id}
+          className={`passport__${id} passport__page
+        ${open ? 'passport--open' : 'passport--close'}`}
+          style={{ zIndex: priority }}
+          onClick={() => openPage(id)}
+          onAnimationEnd={() => setAnimating(false)}>
+          {React.cloneElement(content, { ready: visible })}
+        </div>)
+    }
   </div>
 }
 
