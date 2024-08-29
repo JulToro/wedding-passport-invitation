@@ -21,6 +21,14 @@ const defaultPages = [
     open: false,
     animating: false,
     content: <Collage />
+  },
+  {
+    id: 'second',
+    visible: false,
+    priority: 0,
+    open: false,
+    animating: false,
+    content: <div />
   }
 ].reverse();
 
@@ -65,6 +73,10 @@ const PassportWrapper = ({ children }) => {
   }
 
   return <div className="passport">
+    <div
+      className="passport__page passport__end"
+      onAnimationEnd={() => setAnimating(false)}>
+    </div>
     {
       pagesData.map(({ id, open, priority, content, visible }) =>
         <div

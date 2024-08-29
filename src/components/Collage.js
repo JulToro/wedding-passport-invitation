@@ -2,20 +2,24 @@ import React, { useEffect, useState } from 'react';
 import './Collage.css';
 
 const photoList = [
-  { src: '/images/DSC00015.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC00026.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC00031.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC00037.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC00047.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC00088.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC00109.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC00111.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC00122.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC09782.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC09804.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC09848.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC09858.JPG', text: 'I ❤ U' },
-  { src: '/images/DSC09883.JPG', text: 'I ❤ U' }
+  { src: '/images/wedding (1).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (2).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (3).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (4).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (5).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (6).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (7).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (8).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (9).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (10).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (11).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (12).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (13).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (14).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (15).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (16).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (17).JPG', text: 'I ❤ U' },
+  { src: '/images/wedding (18).JPG', text: 'I ❤ U' }
 ]
 
 const Collage = ({ ready }) => {
@@ -55,9 +59,9 @@ const Collage = ({ ready }) => {
   }
 
   return <div className="collage__sheet">
-    {ready && pile.map((photo, index) => {
+    {pile.map((photo, index) => {
       return <div
-        className={`polaroid ${ready ? 'polaroid--animate' : ''}`}
+        className="polaroid polaroid--animate"
         style={photo.position}
         key={index}
         onAnimationEnd={() => setIsAnimating(false)}>
