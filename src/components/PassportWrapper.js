@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './PassportWrapper.css';
 import Collage from './Collage';
+import Invitation from './Invitation';
 
 const defaultPages = [
   {
@@ -28,7 +29,7 @@ const defaultPages = [
     priority: 0,
     open: false,
     animating: false,
-    content: <div />
+    content: <Invitation />
   }
 ].reverse();
 
@@ -48,19 +49,20 @@ const PassportWrapper = ({ children }) => {
     })
   }
 
-  const openPage = (pageId) => {
+  const togglePage = (pageId) => {
+    if (pagesData.some((page) => page.animating)) return;
     setPagesData((prev) => {
       let index;
       prev = prev.map((page, i) => {
         if (page.id !== pageId) return page;
-        if (page.open) return page;
         index = i;
         const max = Math.max(...prev.map(o => o.priority));
         return {
           ...page,
-          open: true,
+          open: !page.open,
           priority: max + 1,
           visible: false,
+          animating: true,
         }
       })
       prev[index - 1 < 0 ? 0 : index - 1].visible = true;
@@ -68,14 +70,15 @@ const PassportWrapper = ({ children }) => {
     })
   }
 
-  const setAnimating = (pageId, value) => {
-    updatePage(pageId, 'animating', value)
+  const setAnimating = (event, pageId, value) => {
+    if (['open', 'close'].includes(event.animationName)) {
+      updatePage(pageId, 'animating', value)
+    }
   }
 
   return <div className="passport">
     <div
-      className="passport__page passport__end"
-      onAnimationEnd={() => setAnimating(false)}>
+      className="passport__page passport__end">
     </div>
     {
       pagesData.map(({ id, open, priority, content, visible }) =>
@@ -84,8 +87,8 @@ const PassportWrapper = ({ children }) => {
           className={`passport__${id} passport__page
         ${open ? 'passport--open' : 'passport--close'}`}
           style={{ zIndex: priority }}
-          onClick={() => openPage(id)}
-          onAnimationEnd={() => setAnimating(false)}>
+          onClick={() => togglePage(id)}
+          onAnimationEnd={(e) => setAnimating(e, id, false)}>
           {React.cloneElement(content, { ready: visible })}
         </div>)
     }
