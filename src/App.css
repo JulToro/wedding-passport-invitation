@@ -3,3 +3,11 @@
   justify-content: center;
   align-items: center;
 }
+
+body {
+  background-image: url(/public/images/background2.png);
+  background-size: cover;
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  margin: 0;
+}

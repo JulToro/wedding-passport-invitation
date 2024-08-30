@@ -19,7 +19,7 @@ const photoList = [
   { src: '/images/wedding (15).JPG', text: 'Ella sonrió, dijo sí,' },
   { src: '/images/wedding (16).JPG', text: 'ahora juntos caminamos,' },
   { src: '/images/wedding (17).JPG', text: 'hacia nuestro altar. ❤ ' },
-  { src: '/images/wedding (18).JPG', text: 'Y estas Invitado!.' }
+  { src: '/images/wedding (18).JPG', text: 'Estas Invitado!' }
 ]
 
 const Collage = ({ ready }) => {

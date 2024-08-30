@@ -6,6 +6,8 @@
 
 .polaroid {
   background: #fff;
+  background-image: url(/public/images/seal_photo.png);
+  background-size: cover;
   transition: all ease-in 1s;
   position: absolute;
   opacity: 0;

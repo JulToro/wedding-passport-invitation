@@ -40,7 +40,7 @@
 
 .passport__cover::after {
   background-image: url(/public/images/seal.png);
-  background-color: antiquewhite;
+  background-color: #EBF1CB;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -51,24 +51,24 @@
 }
 
 .passport__first {
-  background-color: wheat;
+  background-color: #CACFAE;
 }
 
 .passport__first::after {
   background-image: url(/public/images/seal.png);
-  background-color: antiquewhite;
+  background-color: #EBF1CB;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .passport__second {
-  background-color: wheat;
+  background-color: #CACFAE;
 }
 
 .passport__second::after {
   background-image: url(/public/images/seal.png);
-  background-color: antiquewhite;
+  background-color: #EBF1CB;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
