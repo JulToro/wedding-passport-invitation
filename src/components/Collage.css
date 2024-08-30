@@ -32,9 +32,19 @@
 }
 
 .caption {
-  font-size: 1.2rem;
+  /*font-size: 0.9rem;
   text-align: center;
-  line-height: 2.2em;
+  line-height: 2.2em;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem); /* Ajusta el tamaño del texto dinámicamente */
+  text-align: center; /* Centra el texto horizontalmente */
+  line-height: 1.4; /* Espacio entre líneas más sutil */
+  max-width: 90%; /* Limita el ancho del texto */
+  margin: 0 auto; /* Centra el texto dentro del contenedor */
+  word-wrap: break-word; /* Asegura que el texto se ajuste */
+  padding: 1px; /* Espacio opcional alrededor del texto */
 }
 
 .item {

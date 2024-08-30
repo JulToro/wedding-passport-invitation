@@ -2,24 +2,24 @@ import React, { useEffect, useState } from 'react';
 import './Collage.css';
 
 const photoList = [
-  { src: '/images/wedding (1).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (2).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (3).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (4).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (5).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (6).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (7).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (8).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (9).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (10).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (11).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (12).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (13).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (14).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (15).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (16).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (17).JPG', text: 'I ❤ U' },
-  { src: '/images/wedding (18).JPG', text: 'I ❤ U' }
+  { src: '/images/wedding (1).JPG', text: 'Nos conocimos un día,' },
+  { src: '/images/wedding (2).JPG', text: 'sin planes, sin prisas,' },
+  { src: '/images/wedding (3).JPG', text: 'Momentos inesperados,' },
+  { src: '/images/wedding (4).JPG', text: 'se convirtieron en magia.' },
+  { src: '/images/wedding (5).JPG', text: 'Cada sonrisa, un sueño,' },
+  { src: '/images/wedding (6).JPG', text: 'cada abrazo, una promesa.' },
+  { src: '/images/wedding (7).JPG', text: 'Nos amamos intensamente,' },
+  { src: '/images/wedding (8).JPG', text: 'sin miedo, sin dudas.' },
+  { src: '/images/wedding (9).JPG', text: 'Las pruebas llegaron,' },
+  { src: '/images/wedding (10).JPG', text: 'nos hicieron más fuertes.' },
+  { src: '/images/wedding (11).JPG', text: 'Descubrimos nuestros corazones,' },
+  { src: '/images/wedding (12).JPG', text: 'ella era mi hogar.' },
+  { src: '/images/wedding (13).JPG', text: 'Con un anillo en mano,' },
+  { src: '/images/wedding (14).JPG', text: 'le pedí mi vida.' },
+  { src: '/images/wedding (15).JPG', text: 'Ella sonrió, dijo sí,' },
+  { src: '/images/wedding (16).JPG', text: 'ahora juntos caminamos,' },
+  { src: '/images/wedding (17).JPG', text: 'hacia nuestro altar. ❤ ' },
+  { src: '/images/wedding (18).JPG', text: 'Y estas Invitado!.' }
 ]
 
 const Collage = ({ ready }) => {

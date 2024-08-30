@@ -33,7 +33,9 @@
 }
 
 .passport__cover {
-  background-color: #fecead;
+  /*background-color: #fecead;*/
+  background-image: url(/public/images/background-passport.png);
+  background-size: cover;
 }
 
 .passport__cover::after {
