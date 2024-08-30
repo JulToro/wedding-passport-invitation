@@ -12,8 +12,8 @@
   position: absolute;
   opacity: 0;
   padding: 1rem 1rem 3rem 1rem;
-  width: 50%;
-  height: 40%;
+  width: 60%;
+  height: 50%;
   overflow: hidden;
   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
 }
@@ -40,13 +40,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: clamp(0.8rem, 1.5vw, 1.2rem); /* Ajusta el tamaño del texto dinámicamente */
+  font-size: clamp(0.45rem, 1.5vw, 1.2rem); /* Ajusta el tamaño del texto dinámicamente */
   text-align: center; /* Centra el texto horizontalmente */
   line-height: 1.4; /* Espacio entre líneas más sutil */
   max-width: 90%; /* Limita el ancho del texto */
   margin: 0 auto; /* Centra el texto dentro del contenedor */
   word-wrap: break-word; /* Asegura que el texto se ajuste */
-  padding: 1px; /* Espacio opcional alrededor del texto */
+  padding: 0.5px; /* Espacio opcional alrededor del texto */
+  font-family: 'Libre Baskerville', serif;
 }
 
 .item {
