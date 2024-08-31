@@ -1,7 +1,7 @@
 .passport {
   position: relative;
-  width: 30vw;
-  height: 40vw;
+  width: 40vh;
+  height: 60vh;
   z-index: 1;
   box-shadow: -6px 6px 10px 0px rgba(0, 0, 0, 0.4);
 }
