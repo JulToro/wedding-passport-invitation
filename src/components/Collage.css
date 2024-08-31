@@ -37,7 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: clamp(0.45rem, 1.5vw, 1.2rem); /* Ajusta el tamaño del texto dinámicamente */
+  font-size: clamp(0.7rem, 1.5vw, 1.2rem); /* Ajusta el tamaño del texto dinámicamente */
   text-align: center; /* Centra el texto horizontalmente */
   line-height: 1.4; /* Espacio entre líneas más sutil */
   max-width: 90%; /* Limita el ancho del texto */
@@ -45,6 +45,10 @@
   word-wrap: break-word; /* Asegura que el texto se ajuste */
   padding: 0.5px; /* Espacio opcional alrededor del texto */
   font-family: 'Libre Baskerville', serif;
+  @media (max-width: 600px) {
+    font-size: clamp(0.6rem, 3vw, 1.2rem); 
+    padding: 0.7rem; 
+  }
 }
 
 .item {
