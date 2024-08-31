@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wedding-passport-invitation/static/css/main.6585f43a.css",
+    "main.css": "/wedding-passport-invitation/static/css/main.31e6bb02.css",
     "main.js": "/wedding-passport-invitation/static/js/main.9bed6004.js",
     "static/js/453.edd9c6ac.chunk.js": "/wedding-passport-invitation/static/js/453.edd9c6ac.chunk.js",
     "static/media/background2.png": "/wedding-passport-invitation/static/media/background2.51bae04d31ba5db1007a.png",
@@ -12,12 +12,12 @@
     "static/media/background-sheet-passport.png": "/wedding-passport-invitation/static/media/background-sheet-passport.1d5f623bac8b8303c21c.png",
     "static/media/textoinfo.png": "/wedding-passport-invitation/static/media/textoinfo.ddb3fd09c471cc8d9ca4.png",
     "index.html": "/wedding-passport-invitation/index.html",
-    "main.6585f43a.css.map": "/wedding-passport-invitation/static/css/main.6585f43a.css.map",
+    "main.31e6bb02.css.map": "/wedding-passport-invitation/static/css/main.31e6bb02.css.map",
     "main.9bed6004.js.map": "/wedding-passport-invitation/static/js/main.9bed6004.js.map",
     "453.edd9c6ac.chunk.js.map": "/wedding-passport-invitation/static/js/453.edd9c6ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6585f43a.css",
+    "static/css/main.31e6bb02.css",
     "static/js/main.9bed6004.js"
   ]
 }
