@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
 
-  const audio = useMemo(() => new Audio(`${process.env.PUBLIC_URL}/music/sountrackbackground.mp3`), []);
+  const audio = useMemo(() => new Audio(`${process.env.PUBLIC_URL}/music/soundtrackbackground.mp3`), []);
 
   const [muted, setMuted] = useState(false);
 
