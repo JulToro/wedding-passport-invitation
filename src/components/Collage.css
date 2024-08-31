@@ -8,7 +8,7 @@
   background: #fff;
   background-image: url(/public/images/seal_photo.png);
   background-size: cover;
-  transition: all ease-in 1s;
+  transition: all ease-in 500ms;
   position: absolute;
   opacity: 0;
   padding: 1rem 1rem 4rem 1rem;
@@ -20,6 +20,8 @@
 
 .polaroid:hover {
   box-shadow: 0 0.2rem 1.2rem rgb(255, 255, 255);
+  transform: scale(1.2);
+  z-index: 99;
 }
 
 .polaroid--animate {
