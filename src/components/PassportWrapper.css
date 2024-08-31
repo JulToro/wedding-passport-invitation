@@ -50,7 +50,7 @@
 }
 
 .passport__end {
-  background-color: lightgray;
+  background-color: #e4e2de;
   background-image: url(/public/images/lastpage.png);
   background-size: cover;
   background-repeat: no-repeat;
