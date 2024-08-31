@@ -16,7 +16,7 @@ const photoList = [
   { src: `${process.env.PUBLIC_URL}/images/wedding12.jpg`, text: 'ella era mi hogar.🏠' },
   { src: `${process.env.PUBLIC_URL}/images/wedding13.jpg`, text: 'Con un anillo en mano,💍' },
   { src: `${process.env.PUBLIC_URL}/images/wedding14.jpg`, text: 'le pedí ser mi vida.' },
-  { src: `${process.env.PUBLIC_URL}/images/wedding15.jpg`, text: 'Ella sonrió y dijo sí!😄💍' },
+  { src: `${process.env.PUBLIC_URL}/images/wedding15.jpg`, text: 'Ella sonrió y dijo sí, acepto!😄💍' },
   { src: `${process.env.PUBLIC_URL}/images/wedding16.jpg`, text: 'ahora juntos caminamos,' },
   { src: `${process.env.PUBLIC_URL}/images/wedding17.jpg`, text: 'hacia el altar.👰🤵' },
   { src: `${process.env.PUBLIC_URL}/images/wedding18.jpg`, text: '¡Y estás Invitado!🎉' }
