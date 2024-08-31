@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Invitation from './Invitation';
 import Collage from './Collage';
 import Specs from './Specs';
@@ -44,6 +44,31 @@ const defaultPages = [
 
 const PassportWrapper = ({ audio }) => {
   const [pagesData, setPagesData] = useState(defaultPages);
+  const [closingPage, setClosingPage] = useState(null);
+
+  useEffect(() => {
+    if (closingPage === null) return;
+    setTimeout(closePage, closingPage * 100)
+  }, [closingPage])
+
+  const closePage = () => {
+    setPagesData((prev) => {
+      return prev.map((page, index) => {
+        if (index === closingPage) {
+          return {
+            ...page,
+            open: false,
+            priority: 0
+          }
+        }
+        return page
+      })
+    })
+    setClosingPage((prev) => {
+      if (prev === pagesData.length - 1) return null;
+      return prev + 1
+    });
+  }
 
   const updatePage = (pageId, property, value) => {
     setPagesData((prev) => {
@@ -79,6 +104,10 @@ const PassportWrapper = ({ audio }) => {
     })
   }
 
+  const closePassport = () => {
+    setClosingPage(0);
+  }
+
   const setAnimating = (event, pageId, value) => {
     if (['open', 'close'].includes(event.animationName)) {
       updatePage(pageId, 'animating', value)
@@ -87,7 +116,8 @@ const PassportWrapper = ({ audio }) => {
 
   return <div className="passport">
     <div
-      className="passport__page passport__end">
+      className="passport__page passport__end"
+      onClick={() => closePassport()}>
     </div>
     {
       pagesData.map(({ id, open, priority, content, visible }) =>

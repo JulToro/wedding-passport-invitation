@@ -21,7 +21,7 @@
 .polaroid:hover {
   box-shadow: 0 0.2rem 1.2rem rgb(255, 255, 255);
   transform: scale(1.2);
-  z-index: 99;
+  z-index: 1;
 }
 
 .polaroid--animate {
@@ -46,10 +46,10 @@
   margin: 0 auto; /* Centra el texto dentro del contenedor */
   word-wrap: break-word; /* Asegura que el texto se ajuste */
   padding: 0.5px; /* Espacio opcional alrededor del texto */
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   @media (max-width: 600px) {
-    font-size: clamp(0.6rem, 3vw, 1.2rem); 
-    padding: 0.7rem; 
+    font-size: clamp(0.6rem, 3vw, 1.2rem);
+    padding: 0.7rem;
   }
 }
 
