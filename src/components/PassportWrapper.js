@@ -30,6 +30,18 @@ const defaultPages = [
     open: false,
     animating: false,
     content: <Invitation />
+  },
+  {
+    id: 'third',
+    visible: false,
+    priority: 0,
+    open: false,
+    animating: false,
+    content: <img
+    className="passport__face"
+    src={`${process.env.PUBLIC_URL}/images/specs.png`}
+    alt="specs"
+  />
   }
 ].reverse();
 
