@@ -51,8 +51,10 @@
 
 .passport__end {
   background-color: lightgray;
-  background-image: url(/public/images/background-sheet-passport-2.png);
+  background-image: url(/public/images/lastpage.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .passport__first {
@@ -62,7 +64,7 @@
 }
 
 .passport__first::after {
-  background-image: url(/public/images/background-sheet-passport.png);
+  background-image: url(/public/images/background-sheet-passport-2.png);
   background-color: #F5ECDC;
   background-size: cover;
   background-repeat: no-repeat;
