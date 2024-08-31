@@ -23,7 +23,7 @@
 }
 
 .polaroid--animate {
-  animation: photo 1s linear forwards 500ms;
+  animation: photo 2s linear forwards 1500ms;
 }
 
 .polaroid > img {
@@ -34,9 +34,6 @@
 }
 
 .caption {
-  /*font-size: 0.9rem;
-  text-align: center;
-  line-height: 2.2em;*/
   display: flex;
   justify-content: center;
   align-items: center;
