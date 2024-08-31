@@ -36,7 +36,7 @@
 }
 
 .passport__cover {
-  /*background-color: #fecead;*/
+  background-color: #91957c;
   background-image: url(/public/images/background-passport.png);
   background-size: cover;
 }

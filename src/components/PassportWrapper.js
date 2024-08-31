@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import './PassportWrapper.css';
-import Collage from './Collage';
 import Invitation from './Invitation';
+import Collage from './Collage';
+import Specs from './Specs';
+import './PassportWrapper.css';
 
 const defaultPages = [
   {
@@ -37,11 +38,7 @@ const defaultPages = [
     priority: 0,
     open: false,
     animating: false,
-    content: <img
-    className="passport__face"
-    src={`${process.env.PUBLIC_URL}/images/specs.png`}
-    alt="specs"
-  />
+    content: <Specs />
   }
 ].reverse();
 
