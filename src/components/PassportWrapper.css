@@ -43,7 +43,7 @@
 
 .passport__cover::after {
   background-image: url(/public/images/seal.png);
-  background-color: #ebf1cb;
+  background-color: #F5ECDC;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,28 +56,28 @@
 }
 
 .passport__first {
-  background-color: #cacfae;
+  background-color: #f5e9db;
   background-image: url(/public/images/background-sheet-passport.png);
   background-size: cover;
 }
 
 .passport__first::after {
   background-image: url(/public/images/background-sheet-passport.png);
-  background-color: #ebf1cb;
+  background-color: #F5ECDC;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .passport__second {
-  background-color: #cacfae;
+  background-color: #f5e9db;
   background-image: url(/public/images/background-sheet-passport.png);
   background-size: cover;
 }
 
 .passport__second::after {
   background-image: url(/public/images/seal.png);
-  background-color: #ebf1cb;
+  background-color: #F5ECDC;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
