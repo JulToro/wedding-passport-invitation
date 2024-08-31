@@ -11,7 +11,7 @@ const defaultPages = [
     open: false,
     content: <img
       className="passport__face"
-      src="/images/cover.png"
+      src={`${process.env.PUBLIC_URL}/images/cover.png`}
       alt="Passport cover"
     />
   },
