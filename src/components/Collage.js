@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Collage.css';
 
 const photoList = [
-  { src: `${process.env.PUBLIC_URL}/images/wedding1.JPG`, text: 'Nos conocimos un día,' },
+  { src: `/wedding-passport-invitation/images/wedding1.JPG`, text: 'Nos conocimos un día,' },
   { src: `${process.env.PUBLIC_URL}/images/wedding2.JPG`, text: 'sin planes, sin prisas.🌟' },
   { src: `${process.env.PUBLIC_URL}/images/wedding3.JPG`, text: 'Momentos inesperados,' },
   { src: `${process.env.PUBLIC_URL}/images/wedding4.JPG`, text: 'se convirtieron en magia.✨' },
