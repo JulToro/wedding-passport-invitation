@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wedding-passport-invitation/static/css/main.77b78387.css",
+    "main.css": "/wedding-passport-invitation/static/css/main.5b60f1b3.css",
     "main.js": "/wedding-passport-invitation/static/js/main.e1c4531c.js",
     "static/js/453.edd9c6ac.chunk.js": "/wedding-passport-invitation/static/js/453.edd9c6ac.chunk.js",
     "static/media/background2.png": "/wedding-passport-invitation/static/media/background2.51bae04d31ba5db1007a.png",
@@ -10,15 +10,15 @@
     "static/media/background-sheet-passport-2.png": "/wedding-passport-invitation/static/media/background-sheet-passport-2.23f21252cba4bc81d6bb.png",
     "static/media/seal_photo.png": "/wedding-passport-invitation/static/media/seal_photo.03f866facf1c0481a146.png",
     "static/media/background-sheet-passport.png": "/wedding-passport-invitation/static/media/background-sheet-passport.1d5f623bac8b8303c21c.png",
-    "static/media/specs.png": "/wedding-passport-invitation/static/media/specs.3839ebc1afd4f4f77458.png",
+    "static/media/specs.png": "/wedding-passport-invitation/static/media/specs.b3b02076c236e4a60e77.png",
     "static/media/textoinfo.png": "/wedding-passport-invitation/static/media/textoinfo.5f46a1066bc2c02b1951.png",
     "index.html": "/wedding-passport-invitation/index.html",
-    "main.77b78387.css.map": "/wedding-passport-invitation/static/css/main.77b78387.css.map",
+    "main.5b60f1b3.css.map": "/wedding-passport-invitation/static/css/main.5b60f1b3.css.map",
     "main.e1c4531c.js.map": "/wedding-passport-invitation/static/js/main.e1c4531c.js.map",
     "453.edd9c6ac.chunk.js.map": "/wedding-passport-invitation/static/js/453.edd9c6ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77b78387.css",
+    "static/css/main.5b60f1b3.css",
     "static/js/main.e1c4531c.js"
   ]
 }
