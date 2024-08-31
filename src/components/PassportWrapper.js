@@ -33,8 +33,7 @@ const defaultPages = [
   }
 ].reverse();
 
-const PassportWrapper = ({ children }) => {
-
+const PassportWrapper = ({ audio }) => {
   const [pagesData, setPagesData] = useState(defaultPages);
 
   const updatePage = (pageId, property, value) => {
@@ -50,6 +49,7 @@ const PassportWrapper = ({ children }) => {
   }
 
   const togglePage = (pageId) => {
+    audio.play();
     if (pagesData.some((page) => page.animating)) return;
     setPagesData((prev) => {
       let index;
@@ -61,7 +61,7 @@ const PassportWrapper = ({ children }) => {
           ...page,
           open: !page.open,
           priority: max + 1,
-          visible: false,
+          visible: page.open,
           animating: true,
         }
       })
