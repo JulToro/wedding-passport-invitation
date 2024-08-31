@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/wedding-passport-invitation/static/css/main.a866b196.css",
+    "main.css": "/wedding-passport-invitation/static/css/main.cdbf2b1a.css",
     "main.js": "/wedding-passport-invitation/static/js/main.9bed6004.js",
     "static/js/453.edd9c6ac.chunk.js": "/wedding-passport-invitation/static/js/453.edd9c6ac.chunk.js",
     "static/media/background2.png": "/wedding-passport-invitation/static/media/background2.51bae04d31ba5db1007a.png",
     "static/media/background-passport.png": "/wedding-passport-invitation/static/media/background-passport.1baa6fa091f1cfe8bc16.png",
-    "static/media/lastpage.png": "/wedding-passport-invitation/static/media/lastpage.4ee755287f76387bb973.png",
+    "static/media/lastpage.png": "/wedding-passport-invitation/static/media/lastpage.04ed31696a1b74dfb60c.png",
     "static/media/seal.png": "/wedding-passport-invitation/static/media/seal.ae5e495c55c675b7397b.png",
     "static/media/background-sheet-passport-2.png": "/wedding-passport-invitation/static/media/background-sheet-passport-2.23f21252cba4bc81d6bb.png",
     "static/media/seal_photo.png": "/wedding-passport-invitation/static/media/seal_photo.03f866facf1c0481a146.png",
     "static/media/background-sheet-passport.png": "/wedding-passport-invitation/static/media/background-sheet-passport.1d5f623bac8b8303c21c.png",
     "static/media/textoinfo.png": "/wedding-passport-invitation/static/media/textoinfo.ddb3fd09c471cc8d9ca4.png",
     "index.html": "/wedding-passport-invitation/index.html",
-    "main.a866b196.css.map": "/wedding-passport-invitation/static/css/main.a866b196.css.map",
+    "main.cdbf2b1a.css.map": "/wedding-passport-invitation/static/css/main.cdbf2b1a.css.map",
     "main.9bed6004.js.map": "/wedding-passport-invitation/static/js/main.9bed6004.js.map",
     "453.edd9c6ac.chunk.js.map": "/wedding-passport-invitation/static/js/453.edd9c6ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a866b196.css",
+    "static/css/main.cdbf2b1a.css",
     "static/js/main.9bed6004.js"
   ]
 }
